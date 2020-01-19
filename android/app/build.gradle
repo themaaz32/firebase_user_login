@@ -37,7 +37,7 @@ android {
         applicationId "comdesign.example.firebase_user_login"
         minSdkVersion 16
         targetSdkVersion 28
-        multiDexEnabled true
+        multiDexEnabled true //multidex
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -61,12 +61,11 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
-    implementation 'com.google.firebase:firebase-analytics:17.2.1'
+    implementation 'com.android.support:multidex:1.0.3' //for multidex
 
-    // Add the SDKs for any other Firebase products you want to use in your app
-    // For example, to use Firebase Authentication and Cloud Firestore
+    implementation 'com.google.firebase:firebase-analytics:17.2.1'
     implementation 'com.google.firebase:firebase-auth:19.2.0'
     implementation 'com.google.firebase:firebase-firestore:21.3.1'
-    implementation 'com.android.support:multidex:1.0.3'
+
 
 }
