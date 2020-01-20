@@ -1,4 +1,4 @@
-import 'package:firebase_user_login/screens/RegistrationScreen.dart';
+import 'package:firebase_user_login/screens/LoginScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: RegistrationScreen()
+      home: LoginScreen()
     );
   }
 }
